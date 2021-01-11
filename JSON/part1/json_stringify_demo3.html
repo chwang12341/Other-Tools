@@ -1,0 +1,36 @@
+<script type = "text/javascript">
+
+// 定義 JavaScript 對象
+
+var js_obj = {
+    name: "Jack",
+    score: "99"
+
+
+};
+
+console.log("JavaScript Object: ", js_obj);
+
+
+// 自行定義函數，將名稱為"score"的值加1
+
+function add_score(name, value){
+    if (name == 'score'){
+        value += 1
+
+
+       };
+    return value
+
+};
+
+
+
+
+// 轉換為 JSON 字串
+var json_str = JSON.stringify(js_obj);
+
+console.log("JSON Format: ", json_str)
+
+
+</script>

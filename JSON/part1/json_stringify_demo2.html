@@ -1,0 +1,29 @@
+<script type = "text/javascript">
+
+// 定義 JavaScript 對象
+
+var js_obj = {
+
+    // 符合語法規則
+    name: "Jack",
+    score: "99",
+
+    // 不符合語法規則，轉換過程中會被省略
+    class: undefined,
+    run: function r(){
+    },
+
+    // 不符合語法規則，轉換過程中數組內部會被返回null空值
+    jump: [function() {}]
+
+};
+
+console.log("JavaScript Object: ", js_obj);
+
+// 轉換為 JSON 字串
+var json_str = JSON.stringify(js_obj);
+
+console.log("JSON Format: ", json_str)
+
+
+</script>

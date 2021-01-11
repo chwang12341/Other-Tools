@@ -1,0 +1,20 @@
+<script type = "text/javascript">
+
+// 定義 JavaScript 對象
+
+var js_obj = {
+    'Jack': 99,
+    'Ann': 90,
+    'Ken': 86,
+    'Jen': 75
+};
+
+console.log("JavaScript Object: ", js_obj);
+
+// 轉換為 JSON 字串
+var json_str = JSON.stringify(js_obj, ["Jack", "Jen", "Ann"]);
+
+console.log("JSON Format: ", json_str)
+
+
+</script>

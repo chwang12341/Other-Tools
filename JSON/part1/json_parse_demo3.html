@@ -1,0 +1,23 @@
+<script type = "text/javascript">
+
+// 符合JSON格式的字符串
+var str = '{"name": "Jack", "score": 99, "class": "A"}';
+
+// 自定義的函數
+function process(name, value) {
+
+
+    if(name == 'score'){
+        value += 1;
+    }
+    return value;
+};
+
+
+// 轉成JavaScript對象
+var js_object = JSON.parse(str, process);
+
+// 印出
+console.log(js_object);
+
+</script>
