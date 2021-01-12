@@ -1,0 +1,11 @@
+{
+    "type": "Feature",
+    "properties": {
+        "name": "HsinChu"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [121, 24.82]
+
+    }
+}

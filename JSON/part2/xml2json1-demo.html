@@ -1,0 +1,36 @@
+<!--
+引用三份下載下來的文件，像是載入三個套件的感覺
+-->
+
+<script src = "jquery-3.5.1.min.js"></scrip>
+<script src = "jquery.json2xml.js"></script>
+<script src = "jquery.xml2json.js"></script>
+
+
+<script type = "text/javascript">
+
+// XML格式的字符串
+var xml_str = "<root>" +
+                        "<name>Jack</name>" +
+                        "<score>99</score>" +
+                        "<friend>Jen</friend>" +
+                        "<friend>Ken</friend>" +
+                        "<friend>Cathy</friend>"+
+                        "<friend>Cindy</friend>"+
+                        "</root>";
+
+
+console.log("XML Format: ", xml_str);
+
+// XML 轉換成 JavaScript 對象
+var javascript_obj = $.xml2json(xml_str);
+
+console.log("JavaScript Object: ", javascript_obj);
+
+// 將 JavaScript 對象轉換成 JSON 對象
+var json_str = JSON.stringify(javascript_obj);
+
+console.log("JSON Format: ", json_str);
+
+
+</script>
